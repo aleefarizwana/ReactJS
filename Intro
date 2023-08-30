@@ -1,0 +1,75 @@
+ReactJS is a declarative, efficient, and flexible JavaScript library for building user interfaces. It is an open-source, component-based front-end library that is responsible only for the view layer of the application. ReactJS is not a framework, 
+it is just a library developed by Facebook to solve some problems that we were facing earlier.
+
+App.js
+=======
+import React from "react";
+import ReactDOM from "react-dom";
+
+var name = "Learner";
+
+var element = <h1>Hello, {name}.Welcome to ReactJS.</h1>;
+
+ReactDOM.render(element, document.getElementById("root"));
+
+Hello, Learner.Welcome to ReactJS
+
+websites are built using MVC (model view controller) architecture. 
+In MVC architecture, React is the 'V' which stands for view, whereas the architecture is provided by the Redux or Flux.
+
+Why learn ReactJS?
+=========================
+Today, many JavaScript frameworks are available in the market(like angular, node), but still, React came into the market and gained popularity amongst them.
+The previous frameworks follow the traditional data flow structure, which uses the DOM (Document Object Model). 
+DOM is an object which is created by the browser each time a web page is loaded.
+It dynamically adds or removes the data at the back end and when any modifications were done, then each time a new DOM is created for the same page. 
+This repeated creation of DOM makes unnecessary memory wastage and reduces the performance of the application.
+
+Therefore, a new technology ReactJS framework invented which remove this drawback.
+ReactJS allows you to divide your entire application into various components. 
+ReactJS still used the same traditional data flow, but it is not directly operating on the browser's Document Object Model (DOM) immediately; instead, it operates on a "VIRTUAL DOM".
+It means rather than manipulating the document in a browser after changes to our data, it resolves changes on a DOM built and run entirely in memory. After the virtual DOM has been updated, React determines what changes made to the actual browser's DOM. The React Virtual DOM exists entirely in memory and is a representation of the web browser's DOM. Due to this, when we write a React component, we did not write directly to the DOM; instead,
+we are writing virtual components that react will turn into the DOM.
+
+install ReacJS in VSCode
+===================================
+Node version >= 8.10
+NPM version >= 5.6
+
+node -v
+nopm -v
+npm install -g create-react-app  
+create-react-app reactproject  
+npm start               to execute
+
+Ways to install ReactJS
+===============================
+There are two ways to set up an environment for successful ReactJS application. They are given below.
+
+Using the npm command
+Using the create-react-app command
+
+Pre-requisite for ReactJS
+NodeJS and NPM
+React and React DOM
+Webpack
+Babel
+
+Install Webpack
+
+Webpack is used for module packaging, development, and production pipeline automation.
+We will use webpack-dev-server during development, webpack to create production builds, and webpack CLI provides a set of commands.
+Webpack compiles these into a single file(bundle). To install webpack use the command shown in the below image.
+
+Babel is a JavaScript compiler and transpiler used to convert one source code to others. 
+It compiles React JSX and ES6 to ES5 JavaScript which can be run on all browsers.
+We need babel-loader for JSX file types, babel-preset-react makes your browser update automatically when any changes occur to your code without losing the current state of the app.
+ES6 support requires babel-preset-env Babel preset. To install webpack use the following command shown in the below image
+
+To complete the installation process, you need to add the following files in your project folder. 
+These files are index.html, App.js, main.js, webpack.config.js and, .babelrc. 
+You can create these files by manually, or by using the command prompt.
+
+--------------------refer https://www.javatpoint.com/react-installation for complete installation
+
+
